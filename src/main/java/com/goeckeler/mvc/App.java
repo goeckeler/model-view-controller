@@ -17,9 +17,9 @@ public class App extends Application {
     @Override
     public void start(Stage stage) {
         View view = new View();
-        var scene = new Scene(view, 640, 480);
+        var scene = new Scene(view.getPane(), 400, 300);
         stage.setScene(scene);
-        stage.setTitle("Login Example");
+        stage.setTitle(view.getTitle());
         stage.show();
     }
 
