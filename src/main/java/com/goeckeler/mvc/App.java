@@ -13,19 +13,19 @@ import javafx.stage.Stage;
  */
 public class App extends Application
 {
-    @Override
-    public void start(final Stage stage) {
-        LoginView view = new LoginView();
-        var scene = new Scene(view.getPane(), 500, 300);
-        stage.setScene(scene);
-        stage.setTitle(view.getTitle());
-        stage.show();
+  @Override
+  public void start(final Stage stage) {
+    LoginView view = new LoginView();
+    var scene = new Scene(view.getPane(), 500, 300);
+    stage.setScene(scene);
+    stage.setTitle(view.getTitle());
+    stage.show();
 
-        Users model = new Users();
-        new LoginController(view, model);
-    }
+    Users model = new Users();
+    new LoginController(view, model);
+  }
 
-    public static void main(String[] args) {
-        launch();
-    }
+  public static void main(String[] args) {
+    launch();
+  }
 }

@@ -207,11 +207,13 @@ fabric.properties
 hs_err_pid*
 
 ### VisualStudioCode ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+.vscode/
+
+# .vscode/*
+# !.vscode/settings.json
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/extensions.json
 *.code-workspace
 
 ### VisualStudioCode Patch ###
@@ -221,5 +223,6 @@ hs_err_pid*
 
 ### Maven ###
 target/
+dependency-reduced-pom.xml
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,java,bluej,eclipse,intellij

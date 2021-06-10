@@ -1,4 +1,6 @@
-module com.goeckeler {
-    requires javafx.controls;
-    exports com.goeckeler.mvc;
+module com.goeckeler
+{
+  requires javafx.controls;
+
+  exports com.goeckeler.mvc;
 }
